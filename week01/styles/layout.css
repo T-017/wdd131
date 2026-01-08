@@ -7,6 +7,16 @@
 body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1rem;
-  color: black;
-  background-color: whitesmoke;
+  color: whitesmoke;
+  background-color: rgb(39, 39, 39);
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+nav {
+  font-size: 2rem;
+
 }
