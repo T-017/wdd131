@@ -5,18 +5,49 @@
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1rem;
-  color: whitesmoke;
-  background-color: rgb(39, 39, 39);
+  font-family: Arial, sans-serif;
 }
 
-h1 {
-  font-size: 2rem;
-  padding: 10px;
+.header {
+  background: #3a3a3a;
+  color: white;
+  padding: 50px;
+  text-align: left;
 }
 
-nav {
-  font-size: 2rem;
+.nav {
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
 
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.wrap {
+  display: flex;
+  min-height: 300px;
+}
+
+.main {
+  flex: 3;
+  background: #d9d9d9;
+  padding: 20px;
+}
+
+.aside {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+}
+
+.footer {
+  background: #3a3a3a;
+  color: white;
+  text-align: center;
+  padding: 50px;
 }
