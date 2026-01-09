@@ -40,13 +40,6 @@ body {
   padding: 20px;
 }
 
-.aside {
-  flex: 1;
-  background: whitesmoke;
-  padding: 20px;
-  border-left: 1px solid #ccc;
-}
-
 .footer {
   color: white;
   font-size: 20px;
