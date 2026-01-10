@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/base.css">
-  <script></script>
+  <script src="scripts/getdates.js" defer></script>
   <title>WDD 131 - Dynamic Web Fundamentals - J. Toshio Holt</title>
   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
   <meta name="author" content="J. Toshio Holt">
@@ -26,28 +26,33 @@
   <div class="wrap">
     <main class="main">
       <h1>J. Toshio Holt</h1>
-      <section class="card">
-        <h2>Personal Info</h2>
-        <p>My name is Jack Toshio Holt. I have a bachelor's degree in engineering
-          and currectly work for Toyota North America as a quality assurance specialist.
-          Diverse education and experience is very important to me, so I am now working towards
-          a bachelor's in software development. 
-        </p>
-        <img src="images/couple.jpg" alt="My Wife and I" width="200">
-      </section>
-      <section class="card">
-        <h2>Brigham Young University - Idaho</h2>
-        <p>Brigham Young University in Idaho (BYU-Idaho)is a small private college in Rexburg, ID.
-          Founded in 1888, the now four-year university was formerly know as the 
-          Bannock State Acadamy before becoming Ricks College in 1988 and finally transitioning to
-          BYU-Idaho in 2001.
-        </p>
-        <img src="images/byui.jpg" alt="Alumni" width="200">
+      <section class="cards">
+        <section class="card-personal">
+          <h2 class="card-title">Personal Info</h2>
+          <div class="card-body">
+            <p class="p1">My name is Jack Toshio Holt. I have a bachelor's degree in engineering
+              and currectly work for Toyota North America as a quality assurance specialist.
+              Diverse education and experience is very important to me, so I am now working towards
+              a bachelor's in software development. 
+            </p>
+            <img src="images/couple.jpg" alt="My Wife and I" width="200" class="img1">
+            <h2>Brigham Young University - Idaho</h2>
+            <p class="p2">Brigham Young University in Idaho (BYU-Idaho)is a small private college in Rexburg, ID.
+              Founded in 1888, the now four-year university was formerly know as the 
+              Bannock State Acadamy before becoming Ricks College in 1988 and finally transitioning to
+              BYU-Idaho in 2001.
+            </p>
+            <img src="images/byui.jpg" alt="Alumni" width="200" class="img2">
+          </div>
+        </section>
+        <section class="card-resource">
+          <h2 class="card-title">Web Dev Resources</h2>
+        </section>
       </section>
     </main>
   </div>
   <footer class="footer">
-    <p1>© <span id="currentyear"></span> | J. Toshio Holt | United States</p1>
+    <p1>©<span id="currentyear"></span> | J. Toshio Holt | United States</p1>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 </body>
