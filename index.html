@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/...">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="scripts/getdates.js" defer></script>
   <title>WDD 131 - Dynamic Web Fundamentals - J. Toshio Holt</title>
   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
@@ -13,16 +16,18 @@
 
 <body>
   <header class="header">
-    <span>WDD 131: Dynamic Web Fundamentals</span>
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+    <nav class="nav">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/jack-toshio-holt/">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+        <li><a
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/6?lang=eng&id=p12#p12">Scripture</a>
+        </li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav class="nav">
-    <ul>
-      <li><a href="https://www.linkedin.com/in/jack-toshio-holt/">LinkedIn</a></li>
-      <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
-      <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/6?lang=eng&id=p12#p12">Scripture</a></li>
-      <li><a href="#">Final Project</a></li>
-    </ul>
-  </nav>
   <div class="wrap">
     <main class="main">
       <h1>J. Toshio Holt</h1>
@@ -33,12 +38,12 @@
             <p class="p1">My name is Jack Toshio Holt. I have a bachelor's degree in engineering
               and currectly work for Toyota North America as a quality assurance specialist.
               Diverse education and experience is very important to me, so I am now working towards
-              a bachelor's in software development. 
+              a bachelor's in software development.
             </p>
             <img src="images/couple.jpg" alt="My Wife and I" width="200" class="img1">
             <h2>Brigham Young University - Idaho</h2>
             <p class="p2">Brigham Young University in Idaho (BYU-Idaho)is a small private college in Rexburg, ID.
-              Founded in 1888, the now four-year university was formerly know as the 
+              Founded in 1888, the now four-year university was formerly know as the
               Bannock State Acadamy before becoming Ricks College in 1988 and finally transitioning to
               BYU-Idaho in 2001.
             </p>
@@ -52,8 +57,13 @@
     </main>
   </div>
   <footer class="footer">
-    <p1>©<span id="currentyear"></span> | J. Toshio Holt | United States</p1>
-    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>©<span id="currentyear"></span> | J. Toshio Holt | United States</p>
+    <p>
+      <span>
+        Last Modified: <span id="lastModified"></span>
+    </p>
+    </span>
+    </p>
   </footer>
 </body>
 

@@ -9,7 +9,7 @@ body {
   background: #293f75;
 }
 
-.header {
+.header span {
   color: white;
   font-size: 30px;
   display: block;
@@ -19,7 +19,7 @@ body {
 
 .nav {
   background: rgb(64, 64, 64);
-  margin: 0 auto;
+  margin: auto;
 }
 
 .nav ul {
@@ -129,15 +129,14 @@ h2 {
   justify-self: end;
 }
 
-.footer {
+.footer p {
   color: white;
   font-size: 20px;
   text-align: center;
   padding: 30px;
 }
 
-.footer p {
+.footer span {
   font-size: 15px;
   color: rgb(246, 211, 147);
-  padding: 10px;
 }
