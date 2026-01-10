@@ -12,21 +12,34 @@ body {
 .header {
   color: white;
   font-size: 30px;
+  display: block;
   padding: 25px;
   text-align: center;
 }
 
 .nav {
   background: rgb(64, 64, 64);
+  margin: 0 auto;
+}
+
+.nav ul {
+  list-style-type: none;
   display: flex;
-  font-size: 20px;
   justify-content: space-around;
   padding: 20px;
 }
 
 .nav a {
   color: white;
+  font-size: 25px;
   text-decoration: none;
+}
+.nav a:hover {
+  text-decoration: overline;
+}
+
+.active {
+  color: steelblue;
 }
 
 .wrap {
