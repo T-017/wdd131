@@ -9,9 +9,9 @@ if (input.value.trim() !== "") {
   deleteButton.textContent = "❌";
   li.append(deleteButton);
   list.append(li);
-}
 
-button.addEventListener("click", function () {
-  list.removeChild(li);
-  input.focus();
-});
+  button.addEventListener("click", function () {
+    list.removeChild(li);
+    input.focus();
+  });
+}
