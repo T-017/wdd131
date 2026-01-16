@@ -69,20 +69,15 @@ h2 {
 }
 
 .card-personal {
-  grid-column: 1;
   border: 1px solid black;
   border-radius: 10px;
   overflow: hidden;
-  max-width: 700px;
-  padding: 20px;
 }
 
 .card-title {
   background: #293f75;
   color: white;
-  padding: 12px;
   text-align: center;
-  margin: 0;
   font-size: 20px;
 }
 
@@ -90,9 +85,6 @@ h2 {
   grid-column: 2;
   border: 1px solid black;
   border-radius: 10px;
-  overflow: hidden;
-  max-width: 700px;
-  padding: 20px;
 }
 
 .card-body{
@@ -100,24 +92,11 @@ h2 {
   grid-template-columns: 2fr 1fr;
   gap: 20px;
   padding: 20px;
-}
-
-.p1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.p2 {
-  grid-column: 1;
-  grid-row: 3;
+  align-items: center;
 }
 
 .img1 {
-  grid-column: 2;
-  grid-row: 1;
   width: 100%;
-  max-width: 175px;
-  justify-self: end;
 }
 
 .img2 {
@@ -125,7 +104,6 @@ h2 {
   grid-column: 2;
   grid-row: 3;
   width: 100%;
-  max-width: 175px;
   justify-self: end;
 }
 
