@@ -79,13 +79,13 @@ h2 {
   background: #293f75;
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .card-resource {
-  grid-column: 2;
   border: 1px solid black;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-body{
@@ -104,7 +104,7 @@ h2 {
   width: 100%;
 }
 
-.footer p {
+.footer {
   color: white;
   font-size: 20px;
   text-align: center;
@@ -112,6 +112,6 @@ h2 {
 }
 
 .footer span {
-  font-size: 15px;
+  font-size: 20px;
   color: rgb(246, 211, 147);
 }
