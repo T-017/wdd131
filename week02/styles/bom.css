@@ -25,8 +25,7 @@ main {
   flex-direction: column;
 }
 
-input,
-button {
+input, button {
   padding: 0.5rem;
 }
 
