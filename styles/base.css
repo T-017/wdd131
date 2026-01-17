@@ -47,10 +47,6 @@ body {
   color: steelblue;
 }
 
-.wrap {
-  max-width: auto;
-}
-
 .main {
   background: whitesmoke;
 }
@@ -68,7 +64,7 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   padding: 20px;
   grid-column: 1/3;
