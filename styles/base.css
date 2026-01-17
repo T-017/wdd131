@@ -9,6 +9,10 @@ body {
   background: #293f75;
 }
 
+.header {
+  background: #293f75;
+}
+
 .header span {
   color: white;
   font-size: 30px;
@@ -34,6 +38,7 @@ body {
   font-size: 25px;
   text-decoration: none;
 }
+
 .nav a:hover {
   text-decoration: overline;
 }
@@ -88,7 +93,7 @@ h2 {
   overflow: hidden;
 }
 
-.card-body{
+.card-body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
