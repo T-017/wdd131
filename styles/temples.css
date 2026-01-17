@@ -95,6 +95,7 @@ h1 {
 .temples figcaption {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .footer {
