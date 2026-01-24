@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background: rgb(236, 234, 231);
+  margin: auto;
+}
+
+.page-head {
+  background: pink;
+  color: rgb(77, 62, 26);
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 10px solid rgb(104, 170, 137);
+}
+
+.img-sec {
+  padding: 1rem;
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+  display: block;
+  align-self: center;
+}
+
+.data-sec,
+.weather-sec {
+  padding: 1rem;
+}
+
+.data-sec h2,
+.weather-sec h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+/* 
+.weather-icon {
+  width: 10px;
+  height: 10px;
+}
+*/
+
+.footer {
+  background-color: pink;
+  color: rgb(77, 62, 26);
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+}
