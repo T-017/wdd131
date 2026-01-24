@@ -18,14 +18,19 @@ body {
   border-bottom: 10px solid rgb(104, 170, 137);
 }
 
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .img-sec {
   padding: 1rem;
 }
 
 .img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  align-items: center;
 }
 
 .data-sec,
@@ -45,7 +50,9 @@ ul {
 
 li {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
   padding: 0.25rem 0;
 }
 
