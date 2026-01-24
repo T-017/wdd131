@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="scripts/place.js" defer></script>
+  <title>WDD 131 - Dynamic Web Fundamentals - J. Toshio Holt</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Country Page">
+  <meta name="author" content="J. Toshio Holt">
+</head>
+
+<body>
+  <header class="page-head">
+    <h1>Hokkaido Japan</h1>
+  </header>
+  <main>
+    <section class="img-sec">
+      <picture>
+        <source srcset="images/hokkaido-spring-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/hokkaido-spring-medium.webp" media="(min-width: 500px)">
+        <img src="images/hokkaido-spring-small.webp" alt="Hokkaido Japan Landscape" width="600" height="400">
+      </picture>
+    </section>
+    <section class="data-sec">
+      <h2>Regional Information</h2>
+      <ul>
+
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© <span id="currentYear"></span> | J. Toshio Holt | United States</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>
