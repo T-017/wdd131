@@ -22,11 +22,10 @@ body {
   padding: 1rem;
 }
 
-.picture {
+.img {
   width: 100%;
   height: auto;
   display: block;
-  align-self: center;
 }
 
 .data-sec,
