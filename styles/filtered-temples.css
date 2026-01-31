@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: whitesmoke;
+}
+
+.header {
+  background: #293f75;
+}
+
+.header span {
+  color: white;
+  font-size: 30px;
+  display: block;
+  padding: 25px;
+}
+
+.nav {
+  display: flex;
+  padding: 10px;
+}
+
+#menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+}
+
+#navLinks {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px
+}
+
+@media (max-width: 600px) {
+  #menuButton {
+    display: block;
+  }
+
+  #navLinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #navLinks.open {
+    display: flex;
+  }
+}
+
+.nav a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: overline;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.temples {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  padding: 50px;
+  gap: 50px;
+}
+
+.temples img {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.temples figcaption {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: #293f75;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer span {
+  font-size: 20px;
+  color: rgb(246, 211, 147);
+}
