@@ -13,12 +13,14 @@ body {
 }
 
 .nav ul {
+  background: rgb(155, 187, 127);
   list-style-type: none;
   display: flex;
   justify-content: space-around;
 }
 
 .nav a {
+  color: #333;
   text-decoration: none;
 }
 
@@ -27,6 +29,7 @@ body {
 }
 
 .footer {
+  background: rgb(155, 187, 127);
   font-size: 20px;
   text-align: center;
   padding: 30px;
