@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  line-height: 1.75;
+  background-color: rgb(246, 211, 217);
+  color: #333;
+  padding: 20px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: overline;
+}
+
+.footer {
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+}
