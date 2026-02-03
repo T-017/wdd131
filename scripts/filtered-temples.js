@@ -1,7 +1,7 @@
 document.getElementById("currentYear").innerHTML = document.currentYear = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
-const menuButton = document.getElementById("menuButton");
+const menuButton = document.getElementById("#menuButton");
 const navLinks = document.getElementById("navLinks");
 
 menuButton.addEventListener("click", () => {
@@ -115,11 +115,11 @@ function createTempleCard(filteredTemples) {
     let img = document.createElement("img");
 
     name.textContent = temple.templeName;
-    location.innerHTML = '<span class="label">Location:</span> ${temple.location}';
-    dedication.innerHTML = '<span class="label">Dedicated:</span> ${temple.dedicated}';
-    area.innerHTML = '<span class="label">Area:</span> ${temple.area} sq ft';
+    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+    dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
     img.setAttribute("src", temple.imageUrl);
-    img.setAttribute("alt", '${temple.templeName} Temple');
+    img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
 
     card.appendChild(name);

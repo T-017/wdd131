@@ -11,6 +11,7 @@ body {
 
 .header {
   background: #293f75;
+  display: flex;
 }
 
 .header span {
@@ -21,8 +22,8 @@ body {
 }
 
 .nav {
-  display: flex;
   padding: 10px;
+  margin-left: auto;
 }
 
 #menuButton {
@@ -38,6 +39,26 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 20px
+}
+
+img {
+  max-width: 100%;
+  width: 600px;
+  height: 400px;
+}
+
+section {
+  margin: 20px;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+h2, p {
+
 }
 
 @media (max-width: 600px) {
