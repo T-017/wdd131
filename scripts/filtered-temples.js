@@ -99,9 +99,29 @@ const temples = [
 
 createTempleCard(temples);
 
+const hometemplesLink = document.querySelector("#home");
+hometemplesLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.templeName));
+});
+
 const oldtemplesLink = document.querySelector("#oldtemples");
 oldtemplesLink.addEventListener("click", () => {
-  createTempleCard(temples.filter(temple => temple.dedicated.includes("1900")));
+  createTempleCard(temples.filter(temple => temple.dedicated < "2000"));
+});
+
+const newtemplesLink = document.querySelector("#newtemples");
+newtemplesLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.dedicated >= "2000"));
+});
+
+const largetemplesLink = document.querySelector("#largetemples");
+largetemplesLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area >= "70000"));
+});
+
+const smalltemplesLink = document.querySelector("#smalltemples");
+smalltemplesLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area < "70000"));
 });
 
 function createTempleCard(filteredTemples) {
