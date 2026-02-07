@@ -23,8 +23,8 @@
       <fieldset>
         <legend>Product Name*</legend>
         <label>
-          <select name="product" required>
-            <option value="" disabled placeholder="Choose a Product">Choose a Product &#9662;</option>
+          <select name="product">
+            <option id="products" selected disabled>Select a Product... &#9662;</option>
             <div class="prod-items"></div>
           </select>
         </label>
@@ -32,11 +32,11 @@
 
       <fieldset>
         <legend>Overall Rating</legend>
-        <label><input type="radio" name="rating" id="one" required>Poor</label>
-        <label><input type="radio" name="rating" id="two" required>Fair</label>
-        <label><input type="radio" name="rating" id="three" required>Good</label>
-        <label><input type="radio" name="rating" id="four" required>Very Good</label>
-        <label><input type="radio" name="rating" id="five" required>Excellent</label>
+        <label><input type="radio" name="rating" value="star" required>Poor</label>
+        <label><input type="radio" name="rating" value="star" required>Fair</label>
+        <label><input type="radio" name="rating" value="star" required>Good</label>
+        <label><input type="radio" name="rating" value="star" required>Very Good</label>
+        <label><input type="radio" name="rating" value="star" required>Excellent</label>
       </fieldset>
 
       <fieldset>
@@ -46,7 +46,7 @@
 
       <fieldset>
         <legend>Which features did you find useful in the product?</legend>
-        <legend>(Check all that apply)</legend>
+        (Check all that apply)
         <label><input type="checkbox" name="design" value="yes"> Design</label>
         <label><input type="checkbox" name="durability" value="yes"> Durability</label>
         <label><input type="checkbox" name="use" value="yes"> Ease of Use</label>
@@ -55,7 +55,7 @@
 
       <fieldset>
         <legend>Written Review <span>(Optional)</span></legend>
-        <label><textarea class="text-block" name="review" placeholder="Write your review here..."></textarea></label>
+        <label><textarea id="review" class="text-block" name="review" placeholder="Write your review here..."></textarea></label>
       </fieldset>
       
       <fieldset>
