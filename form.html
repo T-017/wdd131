@@ -23,7 +23,7 @@
       <fieldset>
         <legend>Product Name*</legend>
         <label>
-          <select name="product">
+          <select id="product" name="product" required>
             <option id="products" selected disabled>Select a Product... &#9662;</option>
             <div class="prod-items"></div>
           </select>
@@ -32,11 +32,11 @@
 
       <fieldset>
         <legend>Overall Rating</legend>
-        <label><input type="radio" name="rating" value="star" required>Poor</label>
-        <label><input type="radio" name="rating" value="star" required>Fair</label>
-        <label><input type="radio" name="rating" value="star" required>Good</label>
-        <label><input type="radio" name="rating" value="star" required>Very Good</label>
-        <label><input type="radio" name="rating" value="star" required>Excellent</label>
+        <label><input type="radio" id="rating1" name="rating" value="star" required>Poor</label>
+        <label><input type="radio" id="rating2" name="rating" value="star" required>Fair</label>
+        <label><input type="radio" id="rating3" name="rating" value="star" required>Good</label>
+        <label><input type="radio" id="rating4" name="rating" value="star" required>Very Good</label>
+        <label><input type="radio" id="rating5" name="rating" value="star" required>Excellent</label>
       </fieldset>
 
       <fieldset>
@@ -60,7 +60,7 @@
       
       <fieldset>
         <legend>Your Name <span>(Optional)</span></legend>
-        <label><input type="text" name="name"></label>
+        <label><input type="text" id="name" name="name"></label>
       </fieldset>
       <input type="submit" value="Post My Review">
   </main>
