@@ -18,17 +18,52 @@
 
 <body>
   <header>Product Review</header>
-  <form method="get" action="review.html" class="rev">
-    <fieldset>
-      <legend>Product Name</legend>
-      <label>
-        <select name="product">
-          <option value="">Choose the Product &#9662;</option>
-        </select>
-      </label>
-    </fieldset>
-  </form>
-  <main></main>
+  <main>
+    <form method="get" action="review.html" class="rev">
+      <fieldset>
+        <legend>Product Name*</legend>
+        <label>
+          <select name="product" required>
+            <option value="" disabled placeholder="Choose a Product">Choose a Product &#9662;</option>
+            <div class="prod-items"></div>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="rating" id="one" required>Poor</label>
+        <label><input type="radio" name="rating" id="two" required>Fair</label>
+        <label><input type="radio" name="rating" id="three" required>Good</label>
+        <label><input type="radio" name="rating" id="four" required>Very Good</label>
+        <label><input type="radio" name="rating" id="five" required>Excellent</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Installation Date</legend>
+        <label><input type="date" name="instaldate"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which features did you find useful in the product?</legend>
+        <legend>(Check all that apply)</legend>
+        <label><input type="checkbox" name="design" value="yes"> Design</label>
+        <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+        <label><input type="checkbox" name="use" value="yes"> Ease of Use</label>
+        <label><input type="checkbox" name="performance" value="yes"> Performance</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Written Review <span>(Optional)</span></legend>
+        <label><textarea class="text-block" name="review" placeholder="Write your review here..."></textarea></label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Your Name <span>(Optional)</span></legend>
+        <label><input type="text" name="name"></label>
+      </fieldset>
+      <input type="submit" value="Post My Review">
+  </main>
   <footer class="footer">
     <p>© <span id="currentYear"></span> | J. Toshio Holt | United States</p>
     <p>Last Modified: <span id="lastModified"></span></p>

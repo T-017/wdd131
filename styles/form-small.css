@@ -4,8 +4,99 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  background-color: #e7ddf1;
+  line-height: 1.25;
+}
+
+header {
+  background-color: #4f2975;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding: 30px;
+}
+
+main {
+  padding:2%;
+}
+
+input, select,
+textarea {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+}
+
+span {
+  color: #3a7ed7;
+}
+
+.rev fieldset {
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 2%;
+}
+
+.rev label {
+  display: block;
+  padding-top: 10px;
+}
+
+.rev select,
+.rev input[type="date"],
+.rev input[type="text"] {
+    display: block;
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+  }
+.text-block {
+  display: block;
+  line-height: 1.25;
+  border-radius: 6px;
+  padding: 16px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 150px;
+  appearance: none;
+}
+
+.rev input[type="radio"],
+.rev input[type="checkbox"] {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  
+}
+
+.rev input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(#d7ca3a, #6e730d);
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #999;
+}
+
+.rev input:required {
+  color: red;
+}
+
+.rev input:required:valid {
+  border-right: solid 8px green;
+}
+
 .footer {
-  background-color: #293f75;
+  background-color: #4f2975;
   color: white;
   font-size: 20px;
   text-align: center;
@@ -14,5 +105,5 @@
 
 .footer span {
   font-size: 20px;
-  color: rgb(246, 211, 147);
+  color: #d7ca3a;
 }

@@ -28,3 +28,19 @@ const products = [
     averagerating: 5.0
   }
 ];
+
+createFormName(products);
+
+function createFormName(formReview) {
+  document.querySelector(".prod-items").innerHTML = "";
+  formReview.forEach(product => {
+    let name = document.createElement("p");
+
+    name.textContent = product.name;
+    name.innerHTML = `<span class="option"</span> ${product.name}`;
+
+    name.appendChild(name);
+
+    document.querySelector(".prod-items").appendChild(name);
+  });
+}
