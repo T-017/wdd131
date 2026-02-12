@@ -55,6 +55,10 @@ span {
   color: #3a7ed7;
 }
 
+.required {
+  color: red;
+}
+
 .rev fieldset {
   margin: 2rem 0;
   border: 1px solid #ddd;

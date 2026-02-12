@@ -20,47 +20,47 @@
   <header>Product Review</header>
   <main>
     <form method="get" id="revForm" action="review.html" class="rev">
-      <fieldset>
-        <legend>Product Name*</legend>
+      <fieldset required>
+        <legend>Product Name <span class="required">(Required)</span></legend>
         <label>
-          <select id="product" name="list" required>
+          <select id="product" name="list">
             <option selected disabled>Select a Product... &#9662;</option>
           </select>
         </label>
       </fieldset>
 
       <fieldset>
-        <legend>Overall Rating</legend>
-        <label><input type="radio" name="rating" value="star" required>1 - Poor</label>
-        <label><input type="radio" name="rating" value="star" required>2 - Fair</label>
-        <label><input type="radio" name="rating" value="star" required>3 - Good</label>
-        <label><input type="radio" name="rating" value="star" required>4 - Very Good</label>
-        <label><input type="radio" name="rating" value="star" required>5 - Excellent</label>
+        <legend>Overall Rating <span class="required">(Required)</span></legend>
+        <label><input type="radio" id="option1" name="rating" value="1" required>1 - Poor</label>
+        <label><input type="radio" id="option2" name="rating" value="2" required>2 - Fair</label>
+        <label><input type="radio" id="option3" name="rating" value="3" required>3 - Good</label>
+        <label><input type="radio" id="option4" name="rating" value="4" required>4 - Very Good</label>
+        <label><input type="radio" id="option5" name="rating" value="5" required>5 - Excellent</label>
       </fieldset>
 
       <fieldset>
-        <legend>Installation Date</legend>
-        <label><input type="date" name="instaldate"></label>
+        <legend>Installation Date <span class="required">(Required)</span></legend>
+        <label><input type="date" id="installation" name="installdate" required></label>
       </fieldset>
 
       <fieldset>
         <legend>Which features did you find useful in the product?</legend>
         (Check all that apply)
-        <label><input type="checkbox" name="design" value="yes"> Design</label>
-        <label><input type="checkbox" name="durability" value="yes"> Durability</label>
-        <label><input type="checkbox" name="use" value="yes"> Ease of Use</label>
-        <label><input type="checkbox" name="performance" value="yes"> Performance</label>
+        <label><input type="checkbox" id="design" name="choice" value="yes"> Design</label>
+        <label><input type="checkbox" id="durability" name="choice" value="yes"> Durability</label>
+        <label><input type="checkbox" id="use" name="choice" value="yes"> Ease of Use</label>
+        <label><input type="checkbox" id="performance" name="choice" value="yes"> Performance</label>
       </fieldset>
 
       <fieldset>
         <legend>Written Review <span>(Optional)</span></legend>
-        <label><textarea id="review" class="text-block" name="review"
+        <label><textarea id="written" class="text-block" name="review"
             placeholder="Write your review here..."></textarea></label>
       </fieldset>
 
       <fieldset>
         <legend>Your Name <span>(Optional)</span></legend>
-        <label><input type="text" name="name"></label>
+        <label><input type="text" id="opt-name" name="name"></label>
       </fieldset>
       <input type="submit" value="Post My Review" class="submissions">
     </form>
