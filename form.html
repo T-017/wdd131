@@ -63,14 +63,8 @@
         <legend>Your Name <span>(Optional)</span></legend>
         <label><input type="text" name="name"></label>
       </fieldset>
-      <input type="submit" value="Post My Review">
+      <input type="submit" value="Post My Review" class="submissions">
     </form>
-    <script>
-      document.getElementById('revForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        recordSubmission();
-      });
-    </script>
   </main>
   <footer class="footer">
     <p>© <span id="currentYear"></span> | J. Toshio Holt | United States</p>
