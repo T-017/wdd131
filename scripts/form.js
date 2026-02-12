@@ -4,39 +4,38 @@ document.getElementById("lastModified").innerHTML = document.lastModified;
 const products = [
   {
     id: "fc-1888",
-    name: "flux capacitor",
+    name: "Flux Capacitor",
     averagerating: 4.5
   },
   {
     id: "fc-2050",
-    name: "power laces",
+    name: "Power Laces",
     averagerating: 4.7
   },
   {
     id: "fs-1987",
-    name: "time circuits",
+    name: "Time Circuits",
     averagerating: 3.5
   },
   {
     id: "ac-2000",
-    name: "low voltage reactor",
+    name: "Low Voltage Reactor",
     averagerating: 3.9
   },
   {
     id: "jj-1969",
-    name: "warp equalizer",
+    name: "Warp Equalizer",
     averagerating: 5.0
   }
 ];
 
 function createFormName(formReview) {
   const selectProd = document.querySelector("#product")
-  document.querySelector(".prod-items").innerHTML = "";
-  formReview.forEach(product => {
+  formReview.forEach(products => {
     let name = document.createElement("option");
 
-    name.textContent = product.name;
-    name.value = product.id
+    name.textContent = products.name;
+    name.value = products.id
 
     selectProd.appendChild(name);
   });
@@ -44,23 +43,16 @@ function createFormName(formReview) {
 
 createFormName(products);
 
-// 1️⃣ Initialize display element variable
 const subsDisplay = document.querySelector(".submissions");
 
-// 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
-let numSubs = Number(window.localStorage.getItem("numSubs-ls")) || 0;
+let numSubs = Number(window.localStorage.getItem(subsDisplay)) || 0;
+numSubs++;
+console.log(numSubs)
 
-// 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
 if (numSubs !== 0) {
-  subsDisplay.textContent = numSubss;
+  subsDisplay.textContent = numSubs;
 } else {
-  subsDisplay.textContent = `Thank you for your Review`;
+  subsDisplay.textContent = `This was your first Review. Thank you for your feedback.`;
 }
 
-// 4️⃣ increment the number of visits by one.
-numSubs++;
-
-// 5️⃣ store the new visit total into localStorage, key=numVisits-ls
-localStorage.setItem("numSubs-ls", numSubs);
-
-// 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+localStorage.setItem(subsDisplay, numSubs);
