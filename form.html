@@ -19,7 +19,7 @@
 <body>
   <header>Product Review</header>
   <main>
-    <form method="get" action="review.html" class="rev">
+    <form method="get" id="revForm" action="review.html" class="rev">
       <fieldset>
         <legend>Product Name*</legend>
         <label>
@@ -32,11 +32,11 @@
 
       <fieldset>
         <legend>Overall Rating</legend>
-        <label><input type="radio" name="rating" value="star" required>Poor</label>
-        <label><input type="radio" name="rating" value="star" required>Fair</label>
-        <label><input type="radio" name="rating" value="star" required>Good</label>
-        <label><input type="radio" name="rating" value="star" required>Very Good</label>
-        <label><input type="radio" name="rating" value="star" required>Excellent</label>
+        <label><input type="radio" name="rating" value="star" required>1 - Poor</label>
+        <label><input type="radio" name="rating" value="star" required>2 - Fair</label>
+        <label><input type="radio" name="rating" value="star" required>3 - Good</label>
+        <label><input type="radio" name="rating" value="star" required>4 - Very Good</label>
+        <label><input type="radio" name="rating" value="star" required>5 - Excellent</label>
       </fieldset>
 
       <fieldset>
@@ -64,6 +64,12 @@
       </fieldset>
       <input type="submit" value="Post My Review">
     </form>
+    <script>
+      document.getElementById('revForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        recordSubmission();
+      });
+    </script>
   </main>
   <footer class="footer">
     <p>© <span id="currentYear"></span> | J. Toshio Holt | United States</p>

@@ -44,3 +44,15 @@ function createFormName(formReview) {
     document.querySelector(".prod-items").appendChild(name);
   });
 }
+
+function recordSubmission() {
+  let count = localStorage.getItem('submissionCount');
+
+  count = count ? parseInt(count, 10) : 0;
+
+  count += 1;
+
+  localStorage.setItem('submissionCount', count);
+
+  console.log(`Submissions so far: ${count}`);
+}
