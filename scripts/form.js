@@ -29,21 +29,20 @@ const products = [
   }
 ];
 
-createFormName(products);
-
 function createFormName(formReview) {
+  const selectProd = document.querySelector("#product")
   document.querySelector(".prod-items").innerHTML = "";
   formReview.forEach(product => {
-    let name = document.createElement("p");
+    let name = document.createElement("option");
 
     name.textContent = product.name;
-    name.innerHTML = `<span class="option"</span> ${product.name}`;
+    name.value = product.id
 
-    name.appendChild(name);
-
-    document.querySelector(".prod-items").appendChild(name);
+    selectProd.appendChild(name);
   });
 }
+
+createFormName(products);
 
 // 1️⃣ Initialize display element variable
 const subsDisplay = document.querySelector(".submissions");
