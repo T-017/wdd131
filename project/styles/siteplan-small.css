@@ -86,8 +86,11 @@ li {
 }
 
 .req-sent img {
-  width: 200px;
+  max-width: 100%;
+  width: 600px;
   height: auto;
+  opacity: 75%;
+  border-radius: 15px;
 }
 
 .req-sent p {
