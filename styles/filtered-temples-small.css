@@ -12,6 +12,7 @@ body {
 .header {
   background: #293f75;
   display: flex;
+  text-align: center;
 }
 
 .header span {
@@ -19,6 +20,7 @@ body {
   font-size: 30px;
   display: block;
   padding: 25px;
+  align-content: center;
 }
 
 .nav {
@@ -27,17 +29,28 @@ body {
   display: flex;
 }
 
+li {
+  padding: 5px;
+}
+
 #menuButton {
-  display: none;
+  display: block;
   background: none;
   border: none;
   color: white;
   font-size: 30px;
+  padding: 10px;
 }
 
 #navLinks {
   list-style: none;
-  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.open {
+  display: none;
+  list-style: none;
   justify-content: space-around;
   gap: 20px
 }
@@ -45,7 +58,7 @@ body {
 img {
   max-width: 100%;
   width: 600px;
-  height: 400px;
+  height: 500px;
 }
 
 section {
@@ -54,26 +67,14 @@ section {
 
 div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
+  justify-items: center;
 }
 
-
-@media (max-width: 600px) {
-  #menuButton {
-    display: block;
-  }
-
-  #navLinks {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  #navLinks.open {
-    display: flex;
-  }
+h2,
+p {
+  text-align: center;
 }
 
 .nav a {

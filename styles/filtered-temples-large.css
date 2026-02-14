@@ -1,0 +1,26 @@
+@media (min-width: 2500px) {
+  #menuButton {
+    display: none;
+  }
+
+  #navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+
+  #navLinks.open {
+    display: flex;
+  }
+
+  div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  img {
+    max-width: 100%;
+    width: 800px;
+    height: 700px;
+  }
+}
