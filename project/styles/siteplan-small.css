@@ -67,10 +67,9 @@ li {
   text-decoration: overline;
 }
 
-section {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+.services img {
+  display: flex;
+  justify-self: center;
 }
 
 img {

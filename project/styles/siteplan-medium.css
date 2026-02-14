@@ -13,4 +13,14 @@
   #navLinks.open {
     display: flex;
   }
+
+ .services img {
+  display: flex
+ }
+
+ img {
+   max-width: 100%;
+   width: 500px;
+   height: 400px;
+ }
 }
