@@ -58,8 +58,7 @@
       </fieldset>
     
       <fieldset>
-        <legend>What activities are you interested in?</legend>
-        (Check all that apply)
+        <lege>What activities are you interested in? <span>(Check all that apply)</span></legend>
         <label for="art"><input type="checkbox" id="art" name="choice" value="yes"> Art</label>
         <label for="culture"><input type="checkbox" id="culture" name="choice" value="yes"> Culture</label>
         <label for="cuisine"><input type="checkbox" id="cuisine" name="choice" value="yes"> Cuisine</label>
@@ -76,8 +75,10 @@
       </fieldset>
     
       <fieldset>
-        <legend>Your Name <span>(Optional)</span></legend>
-        <label for="opt-name"><input type="text" id="opt-name" name="name"></label>
+        <legend>Contact Information</legend>
+        <label>Name <input for="opt-name" type="text" id="opt-name" name="name" placeholder="Optional"></label>
+        <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+        <label>Email <span class="required">(Required)</span> <input type="email" name="email" placeholder="someone@gmail.com" required></label>
       </fieldset>
       <input type="submit" value="Request Information" class="submissions">
     </form>

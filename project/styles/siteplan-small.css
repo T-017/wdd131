@@ -120,11 +120,13 @@ span {
 
 .req label {
   display: block;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .req select,
 .req input[type="date"],
+.req input[type="tel"],
+.req input[type="email"],
 .req input[type="text"] {
   display: block;
   border-radius: 6px;
