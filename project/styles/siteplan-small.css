@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,20 +16,28 @@ body {
 }
 
 .header span {
+  display: block;
   font-size: 30px;
   color: #333;
-  display: block;
   padding: 25px;
+  align-content: center;
+  margin-left: 10px;
 }
 
 .nav {
+  display: flex;
   align-self: center;
   margin-left: auto;
-  padding: 10px;
+  padding: 25px;
+  margin-right: 10px;
+}
+
+li {
+  padding: 5px;
 }
 
 #menuButton {
-  display: none;
+  display: block;
   background: none;
   border: none;
   color: #333;
@@ -39,26 +46,15 @@ body {
 
 #navLinks {
   list-style: none;
-  display: flex;
   justify-content: space-around;
   gap: 20px
 }
 
-@media (max-width: 600px) {
-  #menuButton {
-    display: block;
-  }
-
-  #navLinks {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  #navLinks.open {
-    display: flex;
-  }
+.open {
+  display: none;
+  list-style: none;
+  justify-content: space-around;
+  gap: 20px
 }
 
 .nav a {
@@ -66,11 +62,13 @@ body {
   font-size: 25px;
   text-decoration: none;
 }
+
 .nav a:hover {
   text-decoration: overline;
 }
 
 .main {
+  padding: 20px;
   max-width: 800px;
   margin: 0 auto;
 }
