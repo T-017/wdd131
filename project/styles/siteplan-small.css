@@ -67,16 +67,38 @@ li {
   text-decoration: overline;
 }
 
+main {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .services img {
   display: flex;
+  flex-direction: row;
   justify-self: center;
 }
 
 img {
+  display: flex;
+  flex-direction: row;
   max-width: 100%;
   width: 400px;
   height: 300px;
   padding: 10px;
+  border-radius: 25px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.head-par {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 /* ---------- Request Form ---------- */
@@ -167,7 +189,7 @@ span {
   width: 600px;
   height: auto;
   opacity: 75%;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .req-sent p {

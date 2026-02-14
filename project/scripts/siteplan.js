@@ -43,7 +43,7 @@ console.log(numSubs)
 if (numSubs !== 0) {
   subsDisplay.textContent = numSubs;
 } else {
-  subsDisplay.textContent = `This was your first Review. Thank you for your feedback.`;
+  subsDisplay.textContent = `This was your first request. Thank you and we will get back to you soon.`;
 }
 
 localStorage.setItem(subsDisplay, numSubs);
