@@ -42,7 +42,7 @@
           </select>
         </label>
       </fieldset>
-    
+
       <fieldset>
         <legend>Overall Rating <span class="required">(Required)</span></legend>
         <label for="option1"><input type="radio" id="option1" name="rating" value="1" required>1 - Poor</label>
@@ -51,34 +51,38 @@
         <label for="option4"><input type="radio" id="option4" name="rating" value="4" required>4 - Very Good</label>
         <label for="option5"><input type="radio" id="option5" name="rating" value="5" required>5 - Excellent</label>
       </fieldset>
-    
+
       <fieldset>
         <legend>Date of Departure <span class="required">(Required)</span></legend>
         <label for="departure"><input type="date" id="departure" name="installdate" required></label>
       </fieldset>
-    
+
       <fieldset>
         <lege>What activities are you interested in? <span>(Check all that apply)</span></legend>
-        <label for="art"><input type="checkbox" id="art" name="choice" value="yes"> Art</label>
-        <label for="culture"><input type="checkbox" id="culture" name="choice" value="yes"> Culture</label>
-        <label for="cuisine"><input type="checkbox" id="cuisine" name="choice" value="yes"> Cuisine</label>
-        <label for="entertainment"><input type="checkbox" id="entertainment" name="choice" value="yes"> Entertainment</label>
-        <label for="fashion"><input type="checkbox" id="fashion" name="choice" value="yes"> Fashion</label>
-        <label for="shopping"><input type="checkbox" id="shopping" name="choice" value="yes"> Shopping</label>
-        <label for="sightseeing"><input type="checkbox" id="sightseeing" name="choice" value="yes"> Sightseeing</label>
+          <label for="art"><input type="checkbox" id="art" name="choice" value="yes"> Art</label>
+          <label for="culture"><input type="checkbox" id="culture" name="choice" value="yes"> Culture</label>
+          <label for="cuisine"><input type="checkbox" id="cuisine" name="choice" value="yes"> Cuisine</label>
+          <label for="entertainment"><input type="checkbox" id="entertainment" name="choice" value="yes">
+            Entertainment</label>
+          <label for="fashion"><input type="checkbox" id="fashion" name="choice" value="yes"> Fashion</label>
+          <label for="shopping"><input type="checkbox" id="shopping" name="choice" value="yes"> Shopping</label>
+          <label for="sightseeing"><input type="checkbox" id="sightseeing" name="choice" value="yes">
+            Sightseeing</label>
       </fieldset>
-    
+
       <fieldset>
         <legend>Additional Comments <span>(Optional)</span></legend>
         <label for="written"><textarea id="written" class="text-block" name="review"
             placeholder="Please write your questions or requests here..."></textarea></label>
       </fieldset>
-    
+
       <fieldset>
         <legend>Contact Information</legend>
-        <label>Name <input for="opt-name" type="text" id="opt-name" name="name" placeholder="Optional"></label>
-        <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-        <label>Email <span class="required">(Required)</span> <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+        <label>Name <span>(Optional)</span><input for="opt-name" type="text" id="opt-name" name="name"
+            placeholder="John Doe"></label>
+        <label>Phone <span>(Optional)</span><input type="tel" name="phone" placeholder="123-456-7890"></label>
+        <label>Email <span class="required">(Required)</span> <input type="email" name="email"
+            placeholder="someone@gmail.com" required></label>
       </fieldset>
       <input type="submit" value="Request Information" class="submissions">
     </form>
