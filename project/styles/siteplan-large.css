@@ -15,12 +15,12 @@
   }
 
  .services img {
-   display: flex;
+    display: flex;
  }
 
  img {
-   max-width: 100%;
-   width: 600px;
-   height: 500px;
+    max-width: 100%;
+    width: 600px;
+    height: 500px;
  }
 }
