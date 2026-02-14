@@ -16,8 +16,19 @@ menuButton.addEventListener("click", () => {
 
 // Request Form ------------------------------------------------------------------------------
 const services = [
-  { name: "General Questions" },
-  { name: "General Questions" }
+  { name: "Accessibility Services" },
+  { name: "Budget Planning" },
+  { name: "City Selections" },
+  { name: "Cultural Etiquette" },
+  { name: "Emergency Services" },
+  { name: "Festival Schedule" },
+  { name: "Hotel Booking" },
+  { name: "Itinerary Planning" },
+  { name: "Transportation" },
+  { name: "Translation Services" },
+  { name: "Travel Agencies" },
+  { name: "Travel Insurance" },
+  { name: "General Questions"}
 ];
 
 function createFormName(formRequest) {

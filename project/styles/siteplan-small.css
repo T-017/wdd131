@@ -19,9 +19,16 @@ body {
   display: block;
   font-size: 30px;
   color: #333;
-  padding: 25px;
-  align-content: center;
-  margin-left: 10px;
+  align-self: center;
+  padding: 10px;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  opacity: 85%;
+  padding: 15px;
+  align-self: center;
 }
 
 .nav {
@@ -83,8 +90,9 @@ img {
   max-width: 100%;
   width: 400px;
   height: 300px;
-  border-radius: 25px;
+  border-radius: 30px;
   padding: 20px;
+  opacity: 85%;
 }
 
 /* ---------- Request Form ---------- */
