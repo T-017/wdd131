@@ -32,12 +32,12 @@
     </nav>
   </header>
   <main>
-    <form method="get" id="revForm" action="request-sent.html" class="rev">
+    <form method="get" id="revForm" action="request-sent.html" class="req">
       <fieldset>
-        <legend>Product Name <span class="required">(Required)</span></legend>
-        <label for="product">
-          <select id="product" name="list" required>
-            <option value="" disabled selected>Select a Product</option>
+        <legend>Requested Service <span class="required">(Required)</span></legend>
+        <label for="request">
+          <select id="request" name="list" required>
+            <option value="" disabled selected>Select a service...</option>
           </select>
         </label>
       </fieldset>
@@ -68,7 +68,7 @@
       <fieldset>
         <legend>Written Requests <span>(Optional)</span></legend>
         <label for="written"><textarea id="written" class="text-block" name="review"
-            placeholder="Write your questions here..."></textarea></label>
+            placeholder="Please write your questions/requests here..."></textarea></label>
       </fieldset>
     
       <fieldset>
@@ -78,9 +78,9 @@
       <input type="submit" value="Request Information" class="submissions">
     </form>
   </main>
-  <footer class="footer">
-    <p>© <span id="currentYear"></span> | J. Toshio Holt | United States</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
+  <footer>
+    <p>© <span id="currentYear" class="modified"></span> | J. Toshio Holt | United States</p>
+    <p>Last Modified: <span id="lastModified" class="modified"></span></p>
   </footer>
 </body>
 

@@ -15,27 +15,24 @@ menuButton.addEventListener("click", () => {
 });
 
 // Request Form ------------------------------------------------------------------------------
-const products = [
-  {name: "Flux Capacitor"},
-  {name: "Low Voltage Reactor"},
-  {name: "Power Laces"},
-  {name: "Time Circuits"},
-  {name: "Warp Equalizer"}
+const services = [
+  { name: "General Questions" },
+  { name: "General Questions" }
 ];
 
-function createFormName(formReview) {
-  const selectProd = document.querySelector("#product")
-  formReview.forEach(products => {
+function createFormName(formRequest) {
+  const selectProd = document.querySelector("#request")
+  formRequest.forEach(services => {
     let name = document.createElement("option");
 
-    name.textContent = products.name;
-    name.value = products.id
+    name.textContent = services.name;
+    name.value = services.id
 
     selectProd.appendChild(name);
   });
 }
 
-createFormName(products);
+createFormName(services);
 
 const subsDisplay = document.querySelector(".submissions");
 

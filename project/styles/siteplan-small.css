@@ -6,7 +6,7 @@
 body {
   font-family: "Roboto Slab", sans-serif;
   line-height: 1.75;
-  background-color: rgb(253, 226, 230);
+  background-color: rgb(253, 228, 239);
   color: #333;
 }
 
@@ -67,12 +67,90 @@ li {
   text-decoration: overline;
 }
 
-.main {
+section {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+
+/* ---------- Request Form ---------- */
+input,
+select,
+textarea {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+}
+
+span {
+  color: #3a7ed7;
+}
+
+.required {
+  color: red;
+}
+
+.req fieldset {
+  margin: 2rem 0;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 2%;
+}
+
+.req label {
+  display: block;
+  padding-top: 10px;
+}
+
+.req select,
+.req input[type="date"],
+.req input[type="text"] {
+  display: block;
+  border-radius: 6px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+.text-block {
+  display: block;
+  line-height: 1.25;
+  border-radius: 6px;
+  padding: 16px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 150px;
+  appearance: none;
+}
+
+.req input[type="radio"],
+.req input[type="checkbox"] {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.req input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(#c94edc, #3d0c66);
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #999;
+}
+
+/* ---------- Request Sent Page --------- */
 .req-sent {
   padding: 30px;
   max-width: 800px;
@@ -98,9 +176,14 @@ li {
   padding: 40px;
 }
 
-.footer {
+/* ---------- Footer ---------- */
+footer {
   background: rgb(155, 187, 127);
   font-size: 20px;
   text-align: center;
   padding: 30px;
+}
+
+.modified {
+  color: #333;
 }
