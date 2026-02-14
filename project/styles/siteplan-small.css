@@ -73,6 +73,28 @@ li {
   margin: 0 auto;
 }
 
+.req-sent {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.req-sent h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.req-sent img {
+  width: 200px;
+  height: auto;
+}
+
+.req-sent p {
+  font-size: 20px;
+  padding: 40px;
+}
+
 .footer {
   background: rgb(155, 187, 127);
   font-size: 20px;
