@@ -28,7 +28,7 @@ const services = [
   { assist: "Translation Services" },
   { assist: "Travel Agencies" },
   { assist: "Travel Insurance" },
-  { assist: "General Questions"}
+  { assist: "General Questions" }
 ];
 
 function createFormAssist(formRequest) {
