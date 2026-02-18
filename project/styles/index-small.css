@@ -19,12 +19,6 @@ body {
   display: block;
   font-size: 30px;
   color: #333;
-  align-self: center;
-  padding: 10px;
-}
-
-.header img {
-  width: 100px;
   height: 100px;
   opacity: 85%;
   padding: 15px;
