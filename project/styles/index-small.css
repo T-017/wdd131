@@ -10,19 +10,27 @@ body {
   color: black;
 }
 
-.header {
+header {
   background: rgb(155, 187, 127);
   display: flex;
 }
 
-.header span {
-  display: block;
+header span {
+  display: flex;
+  align-self: center;
   font-size: 30px;
   color: black;
-  height: 100px;
-  opacity: 85%;
-  padding: 15px;
+  padding: 10px;
+}
+
+header img {
+  display: flex;
   align-self: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 20px;
+  margin-left: 10px;
 }
 
 .nav {
@@ -31,10 +39,6 @@ body {
   margin-left: auto;
   padding: 25px;
   margin-right: 10px;
-}
-
-li {
-  padding: 5px;
 }
 
 #menuButton {
@@ -81,12 +85,14 @@ h1 {
 }
 
 img {
+  display: flex;
   max-width: 100%;
   width: 400px;
   height: 300px;
   border-radius: 30px;
   padding: 20px;
   opacity: 85%;
+  justify-self: center;
 }
 
 /* ---------- Request Form ---------- */
