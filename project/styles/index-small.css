@@ -6,8 +6,8 @@
 body {
   font-family: "Roboto Slab", sans-serif;
   line-height: 1.75;
-  background-color: rgb(253, 228, 239);
-  color: #333;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .header {
@@ -18,7 +18,7 @@ body {
 .header span {
   display: block;
   font-size: 30px;
-  color: #333;
+  color: black;
   height: 100px;
   opacity: 85%;
   padding: 15px;
@@ -41,7 +41,7 @@ li {
   display: block;
   background: none;
   border: none;
-  color: #333;
+  color: black;
   font-size: 30px;
 }
 
@@ -159,7 +159,7 @@ span {
   width: 96%;
   max-width: 400px;
   margin: -1rem 2% 2rem 2%;
-  box-shadow: 1px 1px 4px #999;
+  box-shadow: 1px 1px 4px black;
 }
 
 /* ---------- Request Sent Page --------- */
@@ -197,5 +197,5 @@ footer {
 }
 
 .modified {
-  color: #333;
+  color: black;
 }
