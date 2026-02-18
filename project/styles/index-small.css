@@ -180,27 +180,11 @@ span {
 
 /* ---------- Request Sent Page --------- */
 .req-sent {
-  padding: 30px;
-  max-width: 800px;
-  margin: 0 auto;
   text-align: center;
 }
 
-.req-sent h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.req-sent img {
-  max-width: 100%;
-  width: 600px;
-  height: auto;
-  opacity: 75%;
-  border-radius: 25px;
-}
-
 .req-sent p {
-  font-size: 20px;
+  font-size: 30px;
   padding: 40px;
 }
 
