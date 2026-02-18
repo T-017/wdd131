@@ -47,13 +47,12 @@ header img {
   background: none;
   border: none;
   color: black;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 #navLinks {
   list-style: none;
   justify-content: space-around;
-  gap: 20px
 }
 
 .open {
