@@ -14,13 +14,14 @@
     display: flex;
   }
 
- .services img {
-  display: flex
- }
+  .services img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
- img {
-   max-width: 100%;
-   width: 500px;
-   height: 400px;
- }
+  img {
+    max-width: 100%;
+    width: 500px;
+    height: 400px;
+  }
 }
