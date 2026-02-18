@@ -14,17 +14,40 @@
     display: flex;
   }
 
- .services img {
-    display: flex;
- }
-
- .travel img {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
- }
-
- img {
+  img {
     max-width: 100%;
-    width: 600px;
-    height: 500px;
- }
+    width: 700px;
+    height: 600px;
+  }
+
+  /* ---------- Travel Section ---------- */
+  .travel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .travel p {
+    grid-column: 1 / span 2;
+  }
+
+  /* ---------- Tourists Section ---------- */
+  .tourists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tourists p {
+    grid-column: 1 / span 2;
+  }
+
+  /* ---------- Etiquette Section ---------- */
+
+  .etiquette {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .etiquette p {
+    grid-column: 1 / span 2;
+  }
 }

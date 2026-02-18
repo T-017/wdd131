@@ -59,7 +59,6 @@ header img {
   display: none;
   list-style: none;
   justify-content: space-around;
-  gap: 20px
 }
 
 .nav a {
@@ -84,13 +83,24 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 img {
   display: flex;
   max-width: 100%;
-  width: 400px;
-  height: 300px;
-  border-radius: 30px;
-  padding: 20px;
+  width: 500px;
+  height: 400px;
+  border-radius: 25px;
+  padding: 10px;
   opacity: 85%;
   justify-self: center;
 }
