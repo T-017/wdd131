@@ -105,6 +105,36 @@ img {
   justify-self: center;
 }
 
+/* ---------- Travel Assistance ---------- */
+section {
+  margin: 20px;
+}
+
+div .traveling-assist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-self: center;
+}
+
+.traveling-assist p,
+.traveling-assist a {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+a {
+  color: rgb(40, 79, 5);
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.traveling-assist a:hover {
+  text-decoration: overline;
+}
+
 /* ---------- Request Form ---------- */
 input,
 select,

@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/index-travel.js" defer></script>
   <title>WDD 131 - Dynamic Web Fundamentals - J. Toshio Holt</title>
   <meta name="description"
     content="WDD 131 - Dynamic Web Fundamentals - Travel Sites, Tourist Locations, and Etiquette in Japan">
@@ -26,8 +27,8 @@
       <ul id="navLinks">
         <li><a href=index.html>Home</a></li>
         <li><a href=travel.html>Travel</a></li>
-        <li><a href=location.html>Locations</a></li>
-        <li><a href=culture.html>Culture</a></li>
+        <!-- <li><a href=location.html>Locations</a></li>
+        <li><a href=culture.html>Culture</a></li> -->
         <li><a href=requests.html>Requests</a></li>
       </ul>
     </nav>
@@ -59,15 +60,15 @@
 
       <fieldset>
         <legend>What activities are you interested in? <span>(Check all that apply)</span></legend>
-          <label for="art"><input type="checkbox" id="art" name="choice" value="yes"> Art</label>
-          <label for="culture"><input type="checkbox" id="culture" name="choice" value="yes"> Culture</label>
-          <label for="cuisine"><input type="checkbox" id="cuisine" name="choice" value="yes"> Cuisine</label>
-          <label for="entertainment"><input type="checkbox" id="entertainment" name="choice" value="yes">
-            Entertainment</label>
-          <label for="fashion"><input type="checkbox" id="fashion" name="choice" value="yes"> Fashion</label>
-          <label for="shopping"><input type="checkbox" id="shopping" name="choice" value="yes"> Shopping</label>
-          <label for="sightseeing"><input type="checkbox" id="sightseeing" name="choice" value="yes">
-            Sightseeing</label>
+        <label for="art"><input type="checkbox" id="art" name="choice" value="yes"> Art</label>
+        <label for="culture"><input type="checkbox" id="culture" name="choice" value="yes"> Culture</label>
+        <label for="cuisine"><input type="checkbox" id="cuisine" name="choice" value="yes"> Cuisine</label>
+        <label for="entertainment"><input type="checkbox" id="entertainment" name="choice" value="yes">
+          Entertainment</label>
+        <label for="fashion"><input type="checkbox" id="fashion" name="choice" value="yes"> Fashion</label>
+        <label for="shopping"><input type="checkbox" id="shopping" name="choice" value="yes"> Shopping</label>
+        <label for="sightseeing"><input type="checkbox" id="sightseeing" name="choice" value="yes">
+          Sightseeing</label>
       </fieldset>
 
       <fieldset>
@@ -78,9 +79,9 @@
 
       <fieldset>
         <legend>Contact Information</legend>
-        <label for="opt-name" >Name <span>(Optional)</span><input type="text" id="opt-name" name="fname"
+        <label for="opt-name">Name <span>(Optional)</span><input type="text" id="opt-name" name="fname"
             placeholder="John Doe"></label>
-        <label for="opt-phone" >Phone <span>(Optional)</span><input type="tel" id="opt-phone" name="numb"
+        <label for="opt-phone">Phone <span>(Optional)</span><input type="tel" id="opt-phone" name="numb"
             placeholder="1234567890"></label>
         <label for="opt-email">Email <span class="required">(Required)</span> <input type="email" id="opt-email"
             name="mail" placeholder="someone@gmail.com" required></label>

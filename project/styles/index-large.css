@@ -41,13 +41,24 @@
   }
 
   /* ---------- Etiquette Section ---------- */
-
   .etiquette {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .etiquette p {
+    grid-column: 1 / span 2;
+  }
+
+  /* -------------- Travel Page -------------- */
+  .traveling-assist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .traveling-assist p,
+  .traveling-assist a {
     grid-column: 1 / span 2;
   }
 }
